@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveUp:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>Up 10 lines</string>
+	<key>uuid</key>
+	<string>B40557A1-0240-4B77-A535-C6C41B8101BE</string>
+</dict>
+</plist>
