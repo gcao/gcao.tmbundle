@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby
 
-require "#{ENV['TM_BUNDLE_SUPPORT']}/align_by_pattern"</string>
+require "#{ENV['TM_BUNDLE_SUPPORT']}/align_by_pattern_command"</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
