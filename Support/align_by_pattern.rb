@@ -1,11 +1,15 @@
 module AlignByPattern
   def align_by_pattern lines, first_pattern, *more_patterns
-    lines = align_by_first_pattern lines, first_pattern
+    if first_pattern[0, 1] == ' '
+      first_pattern.strip!
+    else
+      lines = align_by_first_pattern lines, first_pattern
+    end
     
     pattern_before = first_pattern
 
     0.upto(more_patterns.length - 1) do |i|
-      pattern        = more_patterns.pop
+      pattern        = more_patterns.shift
       lines          = align_by_subsequent_pattern lines, pattern_before, pattern
       pattern_before = pattern_before + ".*" + pattern
     end

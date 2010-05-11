@@ -25,4 +25,15 @@ describe AlignByPattern do
       validates_presence_of :last_name , :message => error_message(:validates_presence_of_last_name )
     TEXT
   end
+  
+  it "should skip aligning text by first pattern if it starts with a space" do
+    input = <<-TEXT.lines
+      validates_presence_of :first_name, :message => error_message(:validates_presence_of_first_name)
+      validates_presence_of :last_name, :message => error_message(:validates_presence_of_last_name)
+    TEXT
+    align_by_pattern(input, ' ,', ':m', '\\)').should == <<-TEXT.lines.to_a
+      validates_presence_of :first_name, :message => error_message(:validates_presence_of_first_name)
+      validates_presence_of :last_name,  :message => error_message(:validates_presence_of_last_name )
+    TEXT
+  end
 end
