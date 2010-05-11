@@ -1,6 +1,8 @@
 
 h3. TODO
 
+* Prepend a space to flag that we do not want to align by this pattern but want to ignore beginning part of line, e.g. " \w   \w" will align by second word.
+
 * Make it possible to enter 2 patterns which are separated by something (e.g. 3 spaces) and align on second pattern. This can be useful in aligning below code (extracted from a HAML file)
 
   %displayName   display_name
